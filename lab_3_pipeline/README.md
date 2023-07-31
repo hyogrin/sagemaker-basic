@@ -46,14 +46,6 @@ lab_03_pipeline 은 lab_01_training, lab_02_inference 이후의 단계 입니다
 
 ---
 
-### [알림] 이 lab_3_pipeline 의 고급 과정은 여기를 참조 하세요.
-- [고급 단계](Advanced/README.md)
-    - 튜닝 스텝, 모델 레지스트리 스텝, 모델 평가 스템, 조건 스텝 및 캐싱 기능 사용
-    - 아래와 같은 파이프라인 구성 구현
-    - ![hpo-pipeline.png](Advanced/img/hpo-pipeline.png)
-
----
-
 ## [참고 자료]
 
     
