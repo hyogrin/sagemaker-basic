@@ -37,6 +37,15 @@ import pandas as pd
 import json
 
 import pandas as pd
+pd.options.display.max_rows=20
+pd.options.display.max_columns=10
+
+def train_sagemaker(args):
+    if os.environ.get('SM_CURRENT_HOST') is not None:
+        args.train_data_path = os.environ.get('SM_CHANNEL_INPUTDATA')
+        args.model_dir = os.environ.get('SM_MODEL_DIR')
+        args.output_data_dir = os.environ.get('SM_OUTPUT_DATA_DIR')
+    return args
 
 def main():
     parser = argparse.ArgumentParser()
@@ -60,7 +69,10 @@ def main():
     parser.add_argument('--output-data-dir', type=str, default='../output')
 
     args = parser.parse_args()
-
+    
+    ## Check Training Sagemaker
+    args = train_sagemaker(args)
+    
     ###################################
     ## 데이터 세트 로딩 및 변환
     ###################################        
