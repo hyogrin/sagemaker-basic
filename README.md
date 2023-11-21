@@ -15,4 +15,9 @@
 
 ### [Lab 2. Serving](lab_2_serving)
 
-### [Lab 3. ML Pipeline](lab_3_pipeline)
+### [Lab 3. ML Pipeline](lab_3_pipeline
+
+### [Lab 4. Custom Script Demo](lab_4_custom_script_demos)
+
+### [Lab 5. migration_challenge](lab_5_migration_challenge)
+
